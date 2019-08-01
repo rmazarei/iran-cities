@@ -20,12 +20,12 @@ SET time_zone = "+00:00";
 -- Table structure for table `city`
 --
 
-CREATE TABLE IF NOT EXISTS "cities" (
-  "id" smallint(5) unsigned NOT NULL,
-  "province_id" smallint(5) unsigned NOT NULL,
-  "county_id" smallint(5) unsigned NOT NULL,
-  "name" varchar(50) NOT NULL,
-  PRIMARY KEY ("id")
+CREATE TABLE IF NOT EXISTS `cities` (
+  `id` smallint(5) unsigned NOT NULL,
+  `province_id` smallint(5) unsigned NOT NULL,
+  `county_id` smallint(5) unsigned NOT NULL,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 --
@@ -1286,11 +1286,11 @@ INSERT INTO `cities` (`id`, `province_id`, `county_id`, `name`) VALUES
 -- Table structure for table `county`
 --
 
-CREATE TABLE IF NOT EXISTS "counties" (
-  "id" smallint(5) unsigned NOT NULL,
-  "province_id" smallint(5) unsigned NOT NULL,
-  "name" varchar(50) NOT NULL,
-  PRIMARY KEY ("id")
+CREATE TABLE IF NOT EXISTS `counties` (
+  `id` smallint(5) unsigned NOT NULL,
+  `province_id` smallint(5) unsigned NOT NULL,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 --
@@ -1734,10 +1734,10 @@ INSERT INTO `counties` (`id`, `province_id`, `name`) VALUES
 -- Table structure for table `province`
 --
 
-CREATE TABLE IF NOT EXISTS "provinces" (
-  "id" smallint(5) unsigned NOT NULL,
-  "name" varchar(50) NOT NULL,
-  PRIMARY KEY ("id")
+CREATE TABLE IF NOT EXISTS `provinces` (
+  `id` smallint(5) unsigned NOT NULL,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 --
