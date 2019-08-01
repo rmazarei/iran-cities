@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `city`
 --
 
-CREATE TABLE IF NOT EXISTS "city" (
+CREATE TABLE IF NOT EXISTS "cities" (
   "id" smallint(5) unsigned NOT NULL,
   "province_id" smallint(5) unsigned NOT NULL,
   "county_id" smallint(5) unsigned NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS "city" (
 -- Dumping data for table `city`
 --
 
-INSERT INTO `city` (`id`, `province_id`, `county_id`, `name`) VALUES
+INSERT INTO `cities` (`id`, `province_id`, `county_id`, `name`) VALUES
 (1, 1, 1, 'آذرشهر'),
 (2, 1, 1, 'تیمورلو'),
 (3, 1, 1, 'گوگان'),
@@ -1286,7 +1286,7 @@ INSERT INTO `city` (`id`, `province_id`, `county_id`, `name`) VALUES
 -- Table structure for table `county`
 --
 
-CREATE TABLE IF NOT EXISTS "county" (
+CREATE TABLE IF NOT EXISTS "counties" (
   "id" smallint(5) unsigned NOT NULL,
   "province_id" smallint(5) unsigned NOT NULL,
   "name" varchar(50) NOT NULL,
@@ -1297,7 +1297,7 @@ CREATE TABLE IF NOT EXISTS "county" (
 -- Dumping data for table `county`
 --
 
-INSERT INTO `county` (`id`, `province_id`, `name`) VALUES
+INSERT INTO `counties` (`id`, `province_id`, `name`) VALUES
 (1, 1, 'آذرشهر'),
 (2, 1, 'اسکو'),
 (3, 1, 'اهر'),
@@ -1734,7 +1734,7 @@ INSERT INTO `county` (`id`, `province_id`, `name`) VALUES
 -- Table structure for table `province`
 --
 
-CREATE TABLE IF NOT EXISTS "province" (
+CREATE TABLE IF NOT EXISTS "provinces" (
   "id" smallint(5) unsigned NOT NULL,
   "name" varchar(50) NOT NULL,
   PRIMARY KEY ("id")
@@ -1744,7 +1744,7 @@ CREATE TABLE IF NOT EXISTS "province" (
 -- Dumping data for table `province`
 --
 
-INSERT INTO `province` (`id`, `name`) VALUES
+INSERT INTO `provinces` (`id`, `name`) VALUES
 (1, 'آذربایجان شرقی'),
 (2, 'آذربایجان غربی'),
 (3, 'اردبیل'),
